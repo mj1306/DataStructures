@@ -8,10 +8,12 @@
 
 int main()
 {
+    std::string datastructures[] = {"Stack", "Queue", "Map", "Linked List"};
+
     int datastructure = select_datastructure();
     int datatype = select_datatype();
 
-    std::cout << "Enter commands in all caps to use your stack." << std::endl;
+    std::cout << "Enter commands in all caps to use your " << datastructures[datastructure-1] << "." << std::endl;
     std::cout << "If unsure with the commands, enter 'h' to see a list of available commands for your datastructure." << std::endl;
 
     if (datastructure == 1)

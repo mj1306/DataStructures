@@ -1,0 +1,23 @@
+[Stack]
+1. PUSH: Enter 'PUSH <value>' to push a value to the stack
+2. PEEK: Enter 'PEEK' to print the top value in the stack
+3. POP: Enter 'POP' to pop (remove) the top element of the stack.
+4. FLUSH: Enter 'FLUSH' to remove all elements in the stack top to bottom and print them as they're removed.
+5. EXIT: Enter 'EXIT' to exit the program.
+
+[Queue]
+1. PUSH: Enter 'PUSH <value>' to push a value to the stack
+
+[Map]
+1. PUSH: Enter 'PUSH <key> <value>' to push a value and it's associated key to the stack
+
+[Linked List]
+1. PUSH_FRONT: Enter 'PUSH_FRONT <value>' to push a value to the front of the linked list.
+2. PUSH_BACK: Enter 'PUSH_BACK <value>' to push a value to the back of the linked list.
+3. POP_FRONT: Enter 'POP_FRONT' to remove and print the front element of the linked list.
+4. FRONT: Enter 'FRONT' to print the front value of the linked list.
+5. BACK: Enter 'BACK' to print the back value of the linked list.
+6. EMPTY: Enter 'EMPTY' to check whether the linked list is empty.
+7. SIZE: Enter 'SIZE' to print the number of elements in the linked list.
+8. PRINT: Enter 'PRINT' to print all elements in the linked list.
+9. EXIT: Enter 'EXIT' to exit the program.

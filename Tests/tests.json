@@ -1,0 +1,74 @@
+{
+  "stack": {
+    "id": 1,
+    "tests": [
+      {
+        "name": "Push and Pop",
+        "datatype": 1,
+        "commands": ["PUSH 42", "PEEK", "POP", "EXIT"],
+        "expected": ["success", "42", "Popped: 42"]
+      },
+      {
+        "name": "Multiple Push + Flush",
+        "datatype": 1,
+        "commands": ["PUSH 1", "PUSH 2", "PUSH 3", "FLUSH", "EXIT"],
+        "expected": ["success", "3 2 1"]
+      },
+      {
+        "name": "With Doubles",
+        "datatype": 2,
+        "commands": ["PUSH 3.14", "PEEK", "POP", "EXIT"],
+        "expected": ["success", "3.14"]
+      },
+      {
+        "name": "With Strings",
+        "datatype": 4,
+        "commands": ["PUSH hello", "PUSH world", "PEEK", "FLUSH", "EXIT"],
+        "expected": ["success", "world", "world hello"]
+      },
+      {
+        "name": "Invalid Datatype Input",
+        "datatype": 1,
+        "commands": ["PUSH hello", "EXIT"],
+        "expected": ["Invalid input"]
+      }
+    ]
+  },
+  "queue": {
+    "id": 2,
+    "tests": []
+  },
+  "map": {
+    "id": 3,
+    "tests": []
+  },
+  "linked_list": {
+    "id": 4,
+    "tests": [
+      {
+        "name": "Basic Operations",
+        "datatype": 1,
+        "commands": ["PUSH_FRONT 10", "PUSH_BACK 20", "FRONT", "BACK", "SIZE", "EXIT"],
+        "expected": ["success", "Front is: 10", "Back is: 20", "Size is 2"]
+      },
+      {
+        "name": "Empty Check",
+        "datatype": 1,
+        "commands": ["EMPTY", "PUSH_FRONT 5", "EMPTY", "EXIT"],
+        "expected": ["empty", "not empty"]
+      },
+      {
+        "name": "Pop Front",
+        "datatype": 1,
+        "commands": ["PUSH_FRONT 1", "PUSH_FRONT 2", "POP_FRONT", "FRONT", "EXIT"],
+        "expected": ["Popped: 2", "Front is: 1"]
+      },
+      {
+        "name": "Print List",
+        "datatype": 1,
+        "commands": ["PUSH_BACK 1", "PUSH_BACK 2", "PUSH_BACK 3", "PRINT", "EXIT"],
+        "expected": ["1", "2", "3"]
+      }
+    ]
+  }
+}
